@@ -37,6 +37,7 @@ body {background-color: #86758d}
     width: 100%;
     overflow: auto;
     font-size: 15px;
+    font-family:'Courier New';
     
   }
 
@@ -47,6 +48,7 @@ body {background-color: #86758d}
     font-size: 15px;
     display: block;
     text-decoration: none;
+    font-family:'Courier New';
 
   }
 
