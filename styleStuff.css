@@ -1,13 +1,13 @@
 body {background-color: #86758d}
 .dropbtn {
     background-color: #fdd9a9;
-    color: black;
+    color: #ee9015;
     padding: 8px 40px;
     font-size: 15px;
     border: none;
     cursor: pointer;
     font-family: "Roboto Mono";
-    border: 2px solid #000000;
+    border: 2px solid #ee9015;
 
 }
 
@@ -38,7 +38,7 @@ body {background-color: #86758d}
   }
 
   .dropdown-content a{
-    color: black;
+    color: #ee9015;
     background-color: #fdd9a9;
     padding: 8px 40px;
     font-size: 15px;
@@ -46,6 +46,6 @@ body {background-color: #86758d}
     text-decoration: none;
   }
 
-  .dropdown-content a:hover {border: 2px solid #000000;}
+  .dropdown-content a:hover {border: 2px solid #ee9015;}
 
   .show {display:block;}
