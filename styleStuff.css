@@ -8,6 +8,14 @@ body {background-color: #86758d}
     cursor: pointer;
     font-family: "Roboto Mono";
     border: 2px solid #ee9015;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.dropbtn span {
+    flex-grow: 1;
     text-align: left;
 }
 
@@ -44,6 +52,14 @@ body {background-color: #86758d}
     font-size: 15px;
     display: block;
     text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .dropdown-content a span {
+    flex-grow: 1;
+    text-align: left 
   }
 
   .dropdown-content a:hover {border: 2px solid #ee9015;}
