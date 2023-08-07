@@ -1,6 +1,6 @@
-body {background-color: #e0b072}
+body {background-color: #e2c195}
 .dropbtn {
-    background-color: #e0b072;
+    background-color: #e2c195;
     color: #ee9015;
     padding: 8px 40px;
     font-size: 15px;
@@ -15,7 +15,7 @@ body {background-color: #e0b072}
 
 
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #e0b072}
+    background-color: #e2c195}
 
 .dropdown {
     position: relative;
@@ -31,7 +31,7 @@ body {background-color: #e0b072}
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #e0b072;
+    background-color: #e2c195;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     width: 100%;
@@ -44,7 +44,7 @@ body {background-color: #e0b072}
 
   .dropdown-content a{
     color: #ee9015;
-    background-color: #e0b072;
+    background-color: #e2c195;
     padding: 8px;
     font-size: 15px;
     display: block;
