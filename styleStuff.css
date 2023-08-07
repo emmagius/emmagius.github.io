@@ -8,7 +8,7 @@ body {background-color: #86758d}
     cursor: pointer;
     font-family: "Roboto Mono";
     border: 2px solid #ee9015;
-
+    text-align: left;
 }
 
 .dropbtn:hover, .dropbtn:focus {
