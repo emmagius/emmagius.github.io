@@ -6,6 +6,7 @@ body {background-color: #86758d}
     font-size: 15px;
     border: none;
     cursor: pointer;
+    font-family: "Roboto Mono";
 
 }
 
@@ -21,6 +22,7 @@ body {background-color: #86758d}
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    border-color: black;
 }
 .dropdown-content {
     display: none;
