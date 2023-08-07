@@ -6,18 +6,13 @@ body {background-color: #86758d}
     font-size: 15px;
     border: none;
     cursor: pointer;
-    font-family: "Roboto Mono";
+    font-family:'Courier New';
     border: 2px solid #ee9015;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+ 
     
 }
 
-.dropbtn span {
-    flex-grow: 1;
-    text-align: left;
-}
+
 
 .dropbtn:hover, .dropbtn:focus {
     background-color: #fdd9a9}
@@ -52,15 +47,10 @@ body {background-color: #86758d}
     font-size: 15px;
     display: block;
     text-decoration: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
   }
 
-  .dropdown-content a span {
-    flex-grow: 1;
-    text-align: left 
-  }
+
 
   .dropdown-content a:hover {border: 2px solid #ee9015;}
 
