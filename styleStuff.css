@@ -1,9 +1,9 @@
-body {background-color: #ece4f0}
+body {background-color: #86758d}
 .dropbtn {
     background-color: #fdd9a9;
     color: black;
     padding: 16px;
-    font-size: 10px;
+    font-size: 15px;
     border: none;
     cursor: pointer;
 
@@ -30,7 +30,7 @@ body {background-color: #ece4f0}
     z-index: 1;
     width: 100%;
     overflow: auto;
-    font-size: 10px;
+    font-size: 15px;
     
   }
 
@@ -38,7 +38,7 @@ body {background-color: #ece4f0}
     color: black;
     background-color: #fdd9a9;
     padding: 12px 16px;
-    font-size: 10px;
+    font-size: 15px;
     display: block;
   }
 
