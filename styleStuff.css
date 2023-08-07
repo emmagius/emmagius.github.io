@@ -44,7 +44,7 @@ body {background-color: #86758d}
   .dropdown-content a{
     color: #ee9015;
     background-color: #fdd9a9;
-    
+    padding: 8px 40px;
     font-size: 15px;
     display: block;
     text-decoration: none;
