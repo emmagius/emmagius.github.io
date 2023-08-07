@@ -2,7 +2,7 @@ body {background-color: #86758d}
 .dropbtn {
     background-color: #fdd9a9;
     color: black;
-    padding: 16px;
+    padding: 8px;
     font-size: 15px;
     border: none;
     cursor: pointer;
@@ -47,10 +47,6 @@ body {background-color: #86758d}
     text-decoration: none;
   }
 
-   .dropdown-content p{
-    color: black;
-    background-color: #fdd9a9;
-    font-size: 15px;
-    display: block;
-   }
+  .dropdown-content a:hover {border-color: #000000;}
+
   .show {display:block;}
