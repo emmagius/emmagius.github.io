@@ -1,4 +1,4 @@
-body {background-color: #86758d}
+body {background-color: #ece4f0}
 .dropbtn {
     background-color: #fdd9a9;
     color: black;
@@ -6,6 +6,7 @@ body {background-color: #86758d}
     font-size: 10px;
     border: none;
     cursor: pointer;
+
 }
 
 .dropbtn:hover, .dropbtn:focus {
@@ -23,7 +24,13 @@ body {background-color: #86758d}
     z-index: 1;
     width: 100%;
     overflow: auto;
-
+    font-size: 10px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 
   .dropdown-content a{
