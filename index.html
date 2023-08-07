@@ -7,13 +7,13 @@
 </head>
 
 <body>
-    <h1>TEST TEST TEST</h1>
     <div class = "dropdown">
-        <button onclick = "opening()" class = "dropbtn">Welcome</button>
+        <button onclick = "opening()" class = "dropbtn" style="text-align: center;">Welcome</button>
         <div id = "myDropdown" class = "dropdown-content">
-            <a href = "#">Page 1</a>
-            <a href = "#">Page 1</a>
-            <a href = "#">Page 1</a>
+            <a href = "#">Home</a>
+            <a href = "#">Physical Pieces</a>
+            <a href = "#">Poetry</a>
+            <a href = "#">Prose</a>
         </div>
     </div>
 </body>
@@ -32,7 +32,7 @@
                 var openDropdown = dropdowns[i];
                 if (openDropdown.classList.contains('show')) {
                     openDropdown.classList.remove('show');
-                    
+
                 }
             }
         }
