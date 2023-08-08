@@ -8,8 +8,5 @@ body {background-color: #86758d}
     position: absolute;
     
     padding: 14px;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+   
 }
