@@ -34,7 +34,12 @@ body {background-color: #86758d;}
 
 @media screen and (max-width: 800px) {
     .text-box {
-        font-size: 10px;
+        width: 70%;
         
+        
+    }
+
+    .border-box {
+        width: 85%
     }
 }
