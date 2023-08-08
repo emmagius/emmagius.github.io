@@ -5,8 +5,9 @@ body {background-color: #86758d}
     color: black;
     font-family:'Courier New';
     margin: 0;
-    position: fixed;
+    position: absolute;
     width: 40%;
     padding: 14px;
-   
+    top: 50%;
+    left: 50%;
 }
