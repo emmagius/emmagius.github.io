@@ -6,6 +6,9 @@ body {background-color: #86758d}
     font-family:'Courier New';
     margin: auto;
     width: 60%;
-    padding: 14px
-
+    padding: 14px;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
