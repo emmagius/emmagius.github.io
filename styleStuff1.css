@@ -31,3 +31,10 @@ body {background-color: #86758d;}
     transform: translate(-50%, -50%);
     box-shadow: 0px 16px 24px 0px rgba(0,0,0,0.2);
 }
+
+@media screen and (max-width: 400px) {
+    .text-box {
+        font-size: 10px;
+        
+    }
+}
