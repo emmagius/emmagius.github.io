@@ -36,12 +36,12 @@ body {background-color: #86758d;}
     .text-box {
         font-size: 10px;
         width: 70%;
-        height: 85%
+        height: 50%
         
     }
 
     .border-box {
         width: 75%;
-        height: 90%;
+        height: 55%;
     }
 }
