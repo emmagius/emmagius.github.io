@@ -22,7 +22,8 @@ body {background-color: #86758d;}
     background-color: rgba(245, 245, 220, 0);
     margin: 0;
     position: absolute;
-    width: 70%;
+    width: 50%;
+    height: 60%;
     padding: 25px;
     top: 50%;
     left: 50%;
