@@ -35,11 +35,12 @@ body {background-color: #86758d;}
 @media screen and (max-width: 800px) {
     .text-box {
         width: 70%;
-        
+        height: 85%
         
     }
 
     .border-box {
-        width: 85%
+        width: 85%;
+        height: 90%;
     }
 }
