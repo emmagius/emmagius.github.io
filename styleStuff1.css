@@ -1,1 +1,11 @@
 body {background-color: #86758d}
+
+.text-box {
+    background-color: #e1d6e6;
+    color: black;
+    font-family:'Courier New';
+    margin: auto;
+    width: 60%;
+    padding: 14px
+
+}
