@@ -42,7 +42,8 @@ a {
 .space {
     display: flex;
     justify-content: space-evenly;
-    top: 80px;
+    top: 30px;
+    position: absolute;
 
 }
 
