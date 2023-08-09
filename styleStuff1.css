@@ -34,7 +34,7 @@ body {background-color: #64aae4;}
 }
 .dropbtn {
     
-    background-color: #64aae4;
+    background-color: #f6d431;
     border: none;
     cursor: pointer;
     font-family:'Courier New';
@@ -46,7 +46,7 @@ body {background-color: #64aae4;}
 
 
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #64aae4}
+    background-color: #f6d431;}
 
 .dropdown {
     position: relative;
