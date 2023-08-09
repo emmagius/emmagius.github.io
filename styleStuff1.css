@@ -42,6 +42,9 @@ a {
 .space {
     display: flex;
     justify-content: space-evenly;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
 }
 
 @media screen and (max-width: 800px) {
