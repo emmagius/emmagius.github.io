@@ -34,12 +34,15 @@ body {background-color: #64aae4;}
 }
 
 a {
-    font-size: 20px;
+    font-size: 50px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
 }
 
 @media screen and (max-width: 800px) {
     .text-box {
-        font-size: 13px;
+        font-size: 10px;
         width: 70%;
         height: 50%
         
