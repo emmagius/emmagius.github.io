@@ -8,11 +8,28 @@
 </head>
 <body>
 <form> 
-    <textarea name="text" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+    <textarea id = "userText" name="text" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'>
+    </textarea>
+    <buton type = "button" id ="addTextButton">Add Text</buton>
 </form> 
-
+<div id = "output"></div>
   
 </body>
+
+<script>
+    const userTextElement = document.getElementById("userText");
+    const addTextButton = document.getElementById("addTextButton");
+    const outputElement = document.getElementById("output");
+
+    addTextButton.addEvenListener("click", () => {
+        const userEnteredText = userTextElement.value;
+        const newParagraph = document.createElement("p");
+        newParagraph.textContent = userEnereredText;
+        outputElement.appendChild(newParagraph);
+        userTextElement.value = "";
+        
+    })
+</script>
 
 
 </html>
