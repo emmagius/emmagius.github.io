@@ -17,14 +17,20 @@
     const userTextElement = document.getElementById("userText");
     const addTextButton = document.getElementById("addTextButton");
     const outputElement = document.getElementById("output");
-    userTextElement.value = localStorage.getItem("savedText");
+    const savedParagraphs = JSON.parse(localStorage.getItem("savedParagraphs")) || [];
+        savedParagraphs.forEach(text => {
+            const newParagraph = document.createElement("p");
+            newParagraph.textContent = text;
+            outputElement.appendChild(newParagraph);
+        });
 
     addTextButton.addEventListener("click", () => {
         const userEnteredText = userTextElement.value;
         const newParagraph = document.createElement("p");
         newParagraph.textContent = userEnteredText;
         outputElement.appendChild(newParagraph);
-        localStorage.setItem("savedText", userEnteredText);
+        savedParagraphs.push(userEnteredText);
+        localStorage.setItem("savedParagraphs", JSON.stringify(savedParagraphs));
         userTextElement.value = "";
 
     });
