@@ -21,7 +21,7 @@
     const addTextButton = document.getElementById("addTextButton");
     const outputElement = document.getElementById("output");
 
-    addTextButton.addEvenListener("click", () => {
+    addTextButton.addEventListener("click", () => {
         const userEnteredText = userTextElement.value;
         const newParagraph = document.createElement("p");
         newParagraph.textContent = userEnereredText;
