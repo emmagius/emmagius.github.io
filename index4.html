@@ -13,23 +13,25 @@
     <button type = "button" id ="addTextButton">Add Text</button>
 </form> 
 <div id = "output"></div>
-  
-</body>
-
 <script>
     const userTextElement = document.getElementById("userText");
     const addTextButton = document.getElementById("addTextButton");
     const outputElement = document.getElementById("output");
+    userTextElement.value = localStorage.getItem("savedText");
 
     addTextButton.addEventListener("click", () => {
         const userEnteredText = userTextElement.value;
         const newParagraph = document.createElement("p");
         newParagraph.textContent = userEnteredText;
         outputElement.appendChild(newParagraph);
+        localStorage.setItem("savedText", userEnteredText);
         userTextElement.value = "";
 
-    })
+    });
 </script>
+</body>
+
+
 
 
 </html>
