@@ -1,174 +1,215 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 4em;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
-      "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  ::-webkit-scrollbar {
-    display: none;
-  }
-  
-  span p {
-    display: inline;
-  }
-  
-  
-  /* The sidebar menu */
-  .sidebar {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0;
-    left: 0;
-    background-color: #d0e4fc; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-  }
-  
-  /* The sidebar links */
-  .sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #050505;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidebar a:hover {
-    color: #8f8c8c;
-  }
-  
-  /* Position and style the close button (top right corner) */
-  .sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  /* The button used to open the sidebar */
-  .openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #d0e4fc;
-    color: rgb(0, 0, 0);
-    padding: 10px 15px;
-    border: none;
-  }
+  box-sizing: border-box;
+}
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #069;
+  text-decoration: none;
+  cursor: pointer;
+  word-wrap: break-word;
+}
+body {
+  margin: 4em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-  .anotherButton {
-    font-size: 15px;
-    cursor: pointer;
-    background-color: #d0e4fc;
-    color: rgb(0, 0, 0);
-    padding: 10px 15px;
-    border: none;
-    border-radius: 12px;
-  }
-  
-  .button4 {border-radius: 12px;}
-  
-  .openbtn:hover {
-    background-color:  #5b5c5f;
-    color:rgb(202, 201, 212) 
-  }
+::-webkit-scrollbar {
+  display: none;
+}
 
-  .anotherButton:hover {
-    background-color:  #5b5c5f;
-    color:rgb(202, 201, 212) 
-  }
+span p {
+  display: inline;
+}
 
-  a { text-decoration: none; }
-  
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
-    transition: margin-left .5s; /* If you want a transition effect */
-    padding: 20px;
-  }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
-  }
 
-  /* Fixed sidenav, full height */
-.sidenav {
-  height: 100%;
-  width: 200px;
-  position: fixed;
-  z-index: 1;
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
   top: 0;
   left: 0;
+  background-color: #d0e4fc; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #050505;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #8f8c8c;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
   background-color: #d0e4fc;
-  overflow-x: hidden;
-  padding-top: 20px;
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  border: none;
+}
+
+.anotherButton {
+  font-size: 15px;
+  cursor: pointer;
+  background-color: #d0e4fc;
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 12px;
+}
+
+.button4 {border-radius: 12px;}
+
+.openbtn:hover {
+  background-color:  #5b5c5f;
+  color:rgb(202, 201, 212) 
+}
+
+.anotherButton:hover {
+  background-color:  #5b5c5f;
+  color:rgb(202, 201, 212) 
+}
+
+a { text-decoration: none; }
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and  (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+
+
+
+/* Fixed sidenav, full height */
+.sidenav {
+height: 100%;
+width: 200px;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: #d0e4fc;
+overflow-x: hidden;
+padding-top: 20px;
 }
 
 /* Style the sidenav links and the dropdown button */
 .sidenav a, .dropdown-btn {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #000000;
-  display: block;
-  border: none;
-  background: none;
-  width:100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
+padding: 6px 8px 6px 16px;
+text-decoration: none;
+font-size: 20px;
+color: #000000;
+display: block;
+border: none;
+background: none;
+width:100%;
+text-align: left;
+cursor: pointer;
+outline: none;
 }
 
 /* On mouse-over */
 .sidenav a:hover, .dropdown-btn:hover {
-  color: #8f8c8c;
+color: #8f8c8c;
 }
 
 /* Main content */
 .main {
-  margin-left: 200px; /* Same as the width of the sidenav */
-  font-size: 20px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
+margin-left: 200px; /* Same as the width of the sidenav */
+font-size: 20px; /* Increased text to enable scrolling */
+padding: 0px 10px;
 }
 
 /* Add an active class to the active dropdown button */
 .active {
-  background-color: #484494;
-  color: white;
+background-color: #484494;
+color: white;
 }
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
-  display: none;
-  background-color: #d0e4fc;
-  padding-left: 8px;
+display: none;
+background-color: #d0e4fc;
+padding-left: 8px;
 }
 
 /* Optional: Style the caret down icon */
 .fa-caret-down {
-  float: right;
-  padding-right: 8px;
+float: right;
+padding-right: 8px;
 }
 
 a {
-    white-space: nowrap; 
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -o-text-oveflow: ellipsis; 
-    
+  
+white-space: nowrap; 
+overflow: hidden;
+text-overflow: ellipsis;
+-o-text-oveflow: ellipsis;
+  
+}
+
+#samePageLink {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-oveflow: ellipsis;
+  word-wrap: break-word;
+  overflow-wrap: break-word !important; 
+  white-space: normal !important;
+}
+
+@media screen and (max-width: 670px) {
+* { 
+  width: auto; /* Adjust as needed */
+}
+#main {
+    width: auto; /* Adjust as needed */
+    padding: 16px;
+}
+body {
+  margin: 1rem;
+}
+
+h1 {
+  padding: 30px;
 }
 
 
-  
+
+
+}

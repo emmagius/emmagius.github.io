@@ -1,68 +1,351 @@
-<html>
-    
+<html lang="en">
+
 <head>
-    <title>form?</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="/styleStuff.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    
+    <script src="https://res.cdn.office.net/teams-js/2.9.1/js/MicrosoftTeams.min.js"
+        integrity="sha384-xnsUQ1tUqsrutBJl0vuf4/hufzLFWW8ZhGnhItfpQ0/BtWgM2uw6YT6BQ5YaKBSM"
+        crossorigin="anonymous"></script>
+    <script src="/static/scripts/teamsapp.js"></script>
+    <script src="/static/scripts/custom.js"></script>
+    <title>Microsoft Teams Tab</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="/static/styles/styleStuff3.css" />
+        
 </head>
+
 <body>
-<form> 
-    <button onclick = "thisFunction()"> Clear stuff</button>
-    <textarea id = "userText" name="text" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'>
-    </textarea>
-    <button type = "button" id ="addTextButton">Add Text</button>
-</form> 
-<div class="accordion" id="accordionPanelsStayOpenExample">
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="JobStartInformationPackage">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" >
-           <strong>Job Start Information Package</strong>
-        </button>
-      </h2>
-      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
-        <div class="accordion-body" id = "output">
-         
+
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+      <a href = "#PrePE">Pre-Construction</a>
+      <a href = "#ItPE">Construction</a>
+      <a href ="#PostPE">Close-out</a>
+      <a href ="#GeneralPE">General</a>
+    </div>
+    
+    <div id="main">
+      <button class="openbtn button4" onclick="openNav()">&#9776; </button>
+      <button class ="anotherButton" onclick ="openAndClose()" style = "float: right;" data-current-state = "open"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+        <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+      </svg></button>
+      <h1 style="text-align: center">Project Manager Tasks</h1>
+      
+      <span>
+
+      <div class = "urmom" id = "PrePE"></div>
+      <h3>Pre-Construction Phase</h3>
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="contractReview">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contractReviewPanel" aria-expanded="true" aria-controls="contractReviewPanel" >
+               <strong>Contract Review</strong>
+            </button>
+          </h2>
+          <div id="contractReviewPanel" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <p>Review the contract for the awarded project. Identify the scope through inclusions
+                and exclusions, or any information that may affect the constructability, schedule (timeline), 
+                or material procurement of the project.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="SOV">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#SOVPanels" aria-expanded="false" aria-controls="SOVPanels">
+              <strong>Establish the Schedule of Values (SOV)</strong>
+            </button>
+          </h2>
+          <div id="SOVPanels" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <p>For contracts that are Lump Sum, a schedule of values (SOV) is created based on the the 
+                scope of work to parse to a level of detail for tracking revenue; the SOV will be used for 
+                requesting regular progress payments for work completed or to-be completed. </p>
+                <br>
+                <br>
+                <p><strong>IMPORTANT</strong> - PLEASE TAKE CARE TO DIFFERENTIATE THE <strong>"WET"</strong>
+                    UTILITY PAY ITEMS FROM THE <strong>"DRY</strong>.</p>
+                <br>
+                <br>
+                <button id = "deepLinkButton" onClick = "onClick(event)"  data-deep-link ="msteams://teams.microsoft.com/l/entity/1c256a65-83a6-4b5c-9ccf-78f8afb6f1e8/_djb2_msteams_prefix_2670613932?context=%7B%22subEntityId%22%3Anull%2C%22channelId%22%3A%2219%3A99aa7ccdae3e4ca4b354ba2f2dfc1b5d%40thread.tacv2%22%7D&groupId=8703a7e1-6aa3-4951-96fd-0029debdd330&tenantId=6170317c-a9e8-46d5-b668-9f934a329707&allowXTenantAccess=false">SOV-Billing Template</button>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="budgetConform">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#budgetConformPanels" aria-expanded="false" aria-controls="budgetConformPanels">
+              <strong>Budget Conform</strong>
+            </button>
+          </h2>
+          <div id="budgetConformPanels" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <button id = "deepLinkButton" onClick = "onClick(event)"  data-deep-link = "msteams://teams.microsoft.com/l/channel/19%3A7168fc80f6af4577b5dc563fe02d1485%40thread.tacv2/tab%3A%3Ac103040e-f394-483d-8f89-74353d82c358?groupId=8703a7e1-6aa3-4951-96fd-0029debdd330&tenantId=6170317c-a9e8-46d5-b668-9f934a329707&allowXTenantAccess=false">Jump to SOP</button>
+                <br>
+                <br>
+              <p>The estimator will create the initial copy of the budget from their estimate, and true-up 
+                the information so that it reflects the awarded scope/proposal.  After which, the project 
+                team will be notified the deliverable is ready for completing the remaining conform steps.</p>
+
+                
+            </div>
+          </div>
         </div>
       </div>
+      
+      
+      </span>
+      <br>
+      <br>
+
+
+      <span>
+
+        <div class = "urmom" id="ItPE"></div>
+        <h3>Construction Phase</h3>
+        
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="FieldTags">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#forecast" aria-expanded="true" aria-controls="forecast" >
+                 <strong>Forecasting</strong>
+              </button>
+            </h2>
+            <div id="forecast" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <p>Forecasting in construction is the process of making educated predictions of a construction
+                     project's financial outcome.  Forecasts are initially based on an analysis of budget,
+                      current project production data, and work remaining for each scope item.  As time goes 
+                      on, the analysis process will be tightened up with the X factor straight from the 
+                      project manager's gut; how they feel the job is going and how they perceive the client 
+                      satisfaction and responses will play a role in the project manager's prediction 
+                      process.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="FieldTags">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#trueup" aria-expanded="true" aria-controls="trueup" >
+                 <strong>True-Up Job Cost</strong>
+              </button>
+            </h2>
+            <div id="trueup" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <p>Before performing the Forecast, the costs in HeavyJob need to be "trued up" (change the values to
+                  match) to the accounting costs. This is because while HeavyJob (HJ) records the hours from the field,
+                  it does not include the actual costs issued from payroll or the invoice costs from material and 
+                  subcontractor invoices. Part of this process involves reviewing any potential differences between 
+                  the accounting HJ costs before importing into HJ.
+                </p>
+                <br>
+                <br>
+                <button id = "deepLinkButton" onClick = "onClick(event)"  data-deep-link = "msteams://teams.microsoft.com/l/channel/19%3A7168fc80f6af4577b5dc563fe02d1485%40thread.tacv2/tab%3A%3Afb61027d-fa99-49cf-8a8b-3ba796fb7c8a?groupId=8703a7e1-6aa3-4951-96fd-0029debdd330&tenantId=6170317c-a9e8-46d5-b668-9f934a329707&allowXTenantAccess=false">Jump to SOP</button>
+           
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+        
+        
+      </span>
+      <br>
+      <br>
+
+        
+        
     </div>
-</div>
 
-
-<script>
-    const userTextElement = document.getElementById("userText");
-    const addTextButton = document.getElementById("addTextButton");
-    const outputElement = document.getElementById("output");
-    const savedParagraphs = JSON.parse(localStorage.getItem("savedParagraphs")) || [];
-        savedParagraphs.forEach(text => {
-            const newParagraph = document.createElement("p");
-            newParagraph.textContent = text;
-            outputElement.appendChild(newParagraph);
-        });
-
-    addTextButton.addEventListener("click", () => {
-        const userEnteredText = userTextElement.value;
-        const newParagraph = document.createElement("p");
-        newParagraph.textContent = userEnteredText;
-        outputElement.appendChild(newParagraph);
-        savedParagraphs.push(userEnteredText);
-        localStorage.setItem("savedParagraphs", JSON.stringify(savedParagraphs));
-        userTextElement.value = "";
-
+    <script type="text/javascript">
+      // Hide the loading indicator
+      microsoftTeams.appInitialization.notifySuccess();
+  
+  
+  
+      /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+    function openNav() {
+      
+  
+     
+      if (document.getElementById("mySidebar").style.width == "250px") {
+        document.getElementById("mySidebar").style.width = "0px";
+        document.getElementById("main").style.marginLeft = "0px";
+      }
+      else {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        
+      }
+    }
+      
+    
+    
+    /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+    function closeNav() {
+      
+     
+      document.getElementById("mySidebar").style.width = "0px";
+      document.getElementById("main").style.marginLeft = "0px";
+      
+    }
+  
+      //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+  
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
+      }
     });
-
-    function thisFunction() { 
-        window.localStorage.clear ();
-    } 
-</script>
+  }
+    function openAccordionItem(ogId, theCollapseOne) {
+      var accordionHeader = document.getElementById(ogId);
+      var accordionButton = accordionHeader.querySelector('button');
+      var accordionBody = document.getElementById(theCollapseOne);
+      var isCollapsed = accordionBody.classList.contains('collapse');
+      if (isCollapsed) {
+        accordionBody.classList.add('show');
+        accordionButton.classList.remove('collapsed');
+        accordionButton.setAttribute('aria-expanded', 'true');
+  
+    }
+    // setTimeout(()=>{ window.scrollTo(0, window.scrollY - 50)}, 100);
+   
+  }
+  function closeALL() {
+    var elements = document.getElementsByClassName('accordion-item');
+    
+    for (var i = 0; i < elements.length; i++) {
+      var accordionButton = elements[i].querySelector('button');
+      var accordionBody = elements[i].querySelector('.accordion-collapse');
+      var isOpen = accordionBody.classList.contains('show');
+        
+      if (isOpen) {
+        accordionButton.classList.add('collapsed');
+        accordionBody.classList.remove('show');
+        accordionButton.setAttribute('aria-expanded', 'false');
+      }
+    }
+  }
+  
+  
+  function onClick(event) {
+    let deepLinkButton = event.target;
+    let deepLink = deepLinkButton.getAttribute("data-deep-link");
+    if (deepLink)
+    {
+      microsoftTeams.executeDeepLink(deepLink);
+    }
+  }
+  
+  function openAndClose() {
+    var elements = document.getElementsByClassName('accordion-item');
+    var theButton = document.getElementsByClassName('anotherButton')[0];
+   var currentState = theButton.getAttribute("data-current-state");
+   
+    if (currentState === "open")
+     {
+  
+      for (var i = 0; i < elements.length; i++) {
+        var accordionButton = elements[i].querySelector('button');
+        var accordionBody = elements[i].querySelector('.accordion-collapse');
+        var isOpen = accordionBody.classList.contains('show');
+        if (!isOpen) {
+          accordionButton.classList.remove('collapsed');
+          accordionButton.classList.add('show');
+          accordionBody.classList.add('show');
+          accordionButton.setAttribute('aria-expanded', 'true');
+        }
+      }
+      theButton.setAttribute('data-current-state', 'close');
+      var svgIcon = theButton.querySelector('svg');
+      svgIcon.innerHTML = '';
+      svgIcon.appendChild(createUp());
+  
+    }
+    
+    else {
+      for (var i = 0; i < elements.length; i++) {
+        var accordionButton = elements[i].querySelector('button');
+        var accordionBody = elements[i].querySelector('.accordion-collapse');
+        var isOpen = accordionBody.classList.contains('show');
+        if (isOpen) {
+          accordionButton.classList.add('collapsed');
+          accordionBody.classList.remove('show');
+          accordionButton.setAttribute('aria-expanded', 'false');
+        }
+      }
+      theButton.setAttribute('data-current-state', 'open');
+      var svgIcon = theButton.querySelector('svg');
+      svgIcon.innerHTML = '';
+      svgIcon.appendChild(createDown());
+    }
+  }
+  
+  
+  function createUp() {
+      var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      svg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+      svg.setAttribute("width", "16");
+      svg.setAttribute("height", "16");
+      svg.setAttribute("fill", "currentColor");
+      svg.setAttribute("class", "bi bi-chevron-double-up");
+      svg.setAttribute("viewBox", "0 0 16 16");
+      
+      var path1 = document.createElementNS("http://www.w3.org/2000/svg", "path");
+      path1.setAttribute("fill-rule", "evenodd");
+      path1.setAttribute("d", "M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z");
+      
+      var path2 = document.createElementNS("http://www.w3.org/2000/svg", "path");
+      path2.setAttribute("fill-rule", "evenodd");
+      path2.setAttribute("d", "M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z");
+      
+      svg.appendChild(path1);
+      svg.appendChild(path2);
+      
+      return svg;
+  }
+  
+  function createDown() {
+      var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      svg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+      svg.setAttribute("width", "16");
+      svg.setAttribute("height", "16");
+      svg.setAttribute("fill", "currentColor");
+      svg.setAttribute("class", "bi bi-chevron-double-down");
+      svg.setAttribute("viewBox", "0 0 16 16");
+      
+      var path1 = document.createElementNS("http://www.w3.org/2000/svg", "path");
+      path1.setAttribute("fill-rule", "evenodd");
+      path1.setAttribute("d", "M1.646 6.646a.5.5.0 0 1 .708 0L8 12.293l5.646-5.647a.5.5.0 0 1 .708.708l-6 6a.5.5.0 0 1-.708 0l-6-6a.5.5.0 0 1 0-.708z");
+      
+      var path2 = document.createElementNS("http://www.w3.org/2000/svg", "path");
+      path2.setAttribute("fill-rule", "evenodd");
+      path2.setAttribute("d", "M1.646 2.646a.5.5.0 0 1 .708 0L8 8.293l5.646-5.647a.5.5.0 0 1 .708.708l-6 6a.5.5.0 0 1-.708 0l-6-6a.5.5.0 0 1 0-.708z");
+      
+      svg.appendChild(path1);
+      svg.appendChild(path2);
+      
+      return svg;
+  }
+  
+      </script>
 </body>
-
-
-
 
 </html>
