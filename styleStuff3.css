@@ -73,6 +73,7 @@ span p {
   color: rgb(0, 0, 0);
   padding: 10px 15px;
   border: none;
+  border-radius: 12px;
 }
 
 .anotherButton {
@@ -85,7 +86,6 @@ span p {
   border-radius: 12px;
 }
 
-.button4 {border-radius: 12px;}
 
 .openbtn:hover {
   background-color:  #5b5c5f;
