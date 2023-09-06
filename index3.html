@@ -11,7 +11,7 @@
         crossorigin="anonymous"></script>
 
 </head>
-<body>
+<body onload = "mobileButtonFunction()">
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         
@@ -1004,17 +1004,17 @@
           // Hide the loading indicator
           microsoftTeams.appInitialization.notifySuccess();
       
-        (function () {
-          if (window.matchMedia('screen and (max-width: 670px)').matches) {
-            var elementToAddTo = document.getElementById("mobileButton");
-            elementToAddTo.classList.add("stickyButton");
-          }
-        })();
+    
 
         
           /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
 
-        
+        function mobileButtonFunction() {
+          if (window.matchMedia('screen and (max-width: 670px)').matches) {
+            var elementToAddTo = document.getElementById("mobileButton");
+            elementToAddTo.classList.add("stickyButton");
+          }
+        }
         function openNav() {
           if (window.matchMedia('screen and (max-width: 670px)').matches) {
             if (document.getElementById("mySidebar").style.width == "250px") {
