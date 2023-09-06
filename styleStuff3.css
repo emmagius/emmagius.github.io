@@ -79,7 +79,13 @@ span p {
 .stickyButton {
   top: 50px;
   position: sticky;
-
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #d0e4fc;
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 12px;
 }
 .anotherButton {
   font-size: 15px;
