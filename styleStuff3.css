@@ -75,19 +75,12 @@ span p {
   border: none;
   border-radius: 12px;
 }
-
+#mobileButton {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
 .stickyButton {
-  top: 1rem;
-  position: fixed;
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #d0e4fc;
-  color: rgb(0, 0, 0);
-  padding: 10px 15px;
-  border: none;
-  border-radius: 12px;
-  border-radius: 0px 12px 12px 0px;
-  z-index: 4;
+  position: static;
 }
 .anotherButton {
   font-size: 15px;
@@ -222,6 +215,19 @@ h1 {
   padding: 30px;
 }
 
+.stickyButton {
+  top: 1rem;
+  position: fixed;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #d0e4fc;
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 12px;
+  border-radius: 0px 12px 12px 0px;
+  z-index: 4;
+}
 
 
 
