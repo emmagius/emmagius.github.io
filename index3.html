@@ -22,7 +22,7 @@
       </div>
       
       <div>
-        <button class="stickyButton" onclick="openNav()">&#9776; </button>
+        <button id = #mobileButton class="openbtn" onclick="openNav()">&#9776; </button>
       </div>
       <div id="main">
         <!-- <button class="openbtn button4" onclick="openNav()">&#9776; </button> -->
@@ -1007,15 +1007,20 @@
       
       
           /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+
+        if (window.matchMedia('screen and (max-width: 670px)').matches) {
+          var elementToAddTo = document.getElementById("mobileButton");
+          elementToAddTo.stickyButton += "CSS";
+        }
         function openNav() {
           if (window.matchMedia('screen and (max-width: 670px)').matches) {
             if (document.getElementById("mySidebar").style.width == "250px") {
               document.getElementById("mySidebar").style.width = "0px";
-              //document.getElementById("main").style.marginLeft = "0px";
+              document.getElementById("mobileButton").style.marginLeft = "0px";
             }
             else {
               document.getElementById("mySidebar").style.width = "250px";
-              //document.getElementById("main").style.marginLeft = "250px";
+              document.getElementById("mobileButton").style.marginLeft = "250px";
             }
           }
       
@@ -1038,7 +1043,7 @@
         function closeNav() {
           if (window.matchMedia('screen and (max-width: 670px)').matches) {
             document.getElementById("mySidebar").style.width = "0px";
-            // document.getElementById("main").style.marginLeft = "0px";
+            document.getElementById("mobileButton").style.marginLeft = "0px";
           }
           
           else {
