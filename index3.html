@@ -1014,11 +1014,11 @@
           if (window.matchMedia('screen and (max-width: 670px)').matches) {
             if (document.getElementById("mySidebar").style.width == "250px") {
               document.getElementById("mySidebar").style.width = "0px";
-              document.getElementById("mobileButton").style.marginLeft = "0px";
+              document.getElementsByClassName("stickyButton").style.marginLeft = "0px";
             }
             else {
               document.getElementById("mySidebar").style.width = "250px";
-              document.getElementById("mobileButton").style.marginLeft = "250px";
+              document.getElementsByClassName("stickyButton").style.marginLeft = "250px";
             }
           }
       
