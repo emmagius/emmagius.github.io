@@ -212,13 +212,16 @@ body {
 }
 
 h1 {
-  padding: 30px;
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom:30px;
 }
 
 .stickyButton {
   top: 1rem;
   position: fixed;
-  font-size: 20px;
+  font-size: 15px;
   cursor: pointer;
   background-color: #d0e4fc;
   color: rgb(0, 0, 0);

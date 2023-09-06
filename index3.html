@@ -20,7 +20,7 @@
         <a href ="#Post">Close-out</a>
         <a href ="#General">General</a>
       </div>
-      <div>
+      <div style = "margin: 1rem">
         <button id = "mobileButton" class="openbtn stickyButton" onclick="openNav()" style = "margin-left: 0px;">&#9776; </button>
       </div>
       
@@ -1014,7 +1014,7 @@
           if (window.matchMedia('screen and (max-width: 670px)').matches) {
             if (document.getElementById("mySidebar").style.width == "250px") {
               document.getElementById("mySidebar").style.width = "0px";
-              document.getElementsById("mobileButton").style.marginLeft = "0px";
+              document.getElementById("mobileButton").style.marginLeft = "0px";
             }
             else {
               document.getElementById("mySidebar").style.width = "250px";
