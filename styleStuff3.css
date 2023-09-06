@@ -77,7 +77,7 @@ span p {
 }
 #mobileButton {
   transition: margin-left .5s; /* If you want a transition effect */
-  padding: 20px;
+  /* padding: 20px; */
 }
 .stickyButton {
   position: static;
