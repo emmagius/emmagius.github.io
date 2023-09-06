@@ -1004,14 +1004,17 @@
           // Hide the loading indicator
           microsoftTeams.appInitialization.notifySuccess();
       
-      
-      
+        (function () {
+          if (window.matchMedia('screen and (max-width: 670px)').matches) {
+            var elementToAddTo = document.getElementById("mobileButton");
+            elementToAddTo.stickyButton += "CSS";
+          }
+        })();
+        
+        
           /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
 
-        if (window.matchMedia('screen and (max-width: 670px)').matches) {
-          var elementToAddTo = document.getElementById("mobileButton");
-          elementToAddTo.stickyButton += "CSS";
-        }
+        
         function openNav() {
           if (window.matchMedia('screen and (max-width: 670px)').matches) {
             if (document.getElementById("mySidebar").style.width == "250px") {
