@@ -1014,11 +1014,11 @@
           if (window.matchMedia('screen and (max-width: 670px)').matches) {
             if (document.getElementById("mySidebar").style.width == "250px") {
               document.getElementById("mySidebar").style.width = "0px";
-              document.getElementById("mobileButton").style.marginLeft = "0px";
+              document.getElementById("mobileButton").style.marginLeft = "-1rem";
             }
             else {
               document.getElementById("mySidebar").style.width = "250px";
-              document.getElementById("mobileButton").style.marginLeft = "250px";
+              document.getElementById("mobileButton").style.marginLeft = "264px";
             }
           }
       
@@ -1041,7 +1041,7 @@
         function closeNav() {
           if (window.matchMedia('screen and (max-width: 670px)').matches) {
             document.getElementById("mySidebar").style.width = "0px";
-            document.getElementById("mobileButton").style.marginLeft = "0px";
+            document.getElementById("mobileButton").style.marginLeft = "-1rem";
           }
           
           else {
